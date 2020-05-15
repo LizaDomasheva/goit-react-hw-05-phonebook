@@ -1,0 +1,20 @@
+.enter {
+    opacity: 0;
+  }
+  
+  .enterActive {
+    transform: rotate(720deg) scale(2);
+  opacity:1;
+  transition: transform 500ms, opacity 500ms;
+  }
+  
+  .exit {
+    transform: rotate(720deg) scale(2);
+    opacity:1;
+  }
+  
+  .exitActive {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+

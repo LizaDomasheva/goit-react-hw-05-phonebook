@@ -1,0 +1,18 @@
+.title {
+        padding: 15px;
+        font-size: 24px;
+        text-align: center;
+}
+
+.input {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.input:hover,
+.input:focus {
+    outline: thick double #32a1ce;
+}

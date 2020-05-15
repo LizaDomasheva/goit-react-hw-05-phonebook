@@ -1,0 +1,24 @@
+.enter {
+    top: 0;
+    left: calc(13% + 5px);
+    right: calc(13% + 5px);
+    opacity: 0.01;
+    transform: translateY(0%) scale(0.01);
+  }
+  
+  .enterActive {
+    opacity: 1;
+    transform: translateY(0%) scale(2);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .exit {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  
+  .exitActive {
+    opacity: 0;
+    transform: scale(4);
+    transition: all 1000ms ease-in-out;
+  }

@@ -1,0 +1,30 @@
+.item {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    width: 370px;
+    text-transform: capitalize;
+}
+
+.button {
+    margin: 10px auto;
+    box-shadow: 1px 1px 1px 2px #858686;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #858686;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-weight: 400;
+    padding: 8px 25px;
+}
+
+.button:hover,
+.button:focus {
+    background:linear-gradient(to bottom, #378de5 5%, #7abaff 100%);
+    background-color:#378de5;
+    box-shadow: 1px 1px 1px 2px #7abaff;
+    border:none;
+    color: white;
+    outline: none;
+}
