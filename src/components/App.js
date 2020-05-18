@@ -20,6 +20,7 @@ export default class App extends Component {
     contacts: [],
     filter: '',
     isVisible: false,
+    isOpen: false
   };
 
   componentDidMount() {
@@ -76,9 +77,15 @@ export default class App extends Component {
         </CSSTransition>
         <ContactForm getContactInfo={this.getContactInfo} contacts={contacts} />
         <h2 className={styles.title}>Contacts</h2>
-        {(contacts.length >= 2 || filter.length !== 0) && (
-          <Filter filter={filter} searchFilter={this.searchFilter} />
-        )}
+          <CSSTransition
+          in={contacts.length >= 2 || filter.length !== 0}
+          timeout={500}
+          classNames={fadeTransition}
+          mountOnEnter
+          unmountOnExit
+        >
+          <Filter  filter={filter} searchFilter={this.searchFilter} />
+          </CSSTransition>
         <ContactList
           contacts={filteredContacts}
           filter={filter}
